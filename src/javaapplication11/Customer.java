@@ -35,6 +35,11 @@ public class Customer {
     
     public void sendOrder()
     {
-        
+        System.out.println("This method is to send order");
+    }
+    
+    public void receiveOrder()
+    {
+        System.out.println("This method is to receive order");
     }
 }
