@@ -19,16 +19,16 @@ public class NormalOrder extends Order{
         return date;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(Date newDate) {
+        date = newDate;
     }
 
     public String getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
+    public void setNumber(String newNumber) {
+        number = newNumber;
     }
     
     public void confirm()
