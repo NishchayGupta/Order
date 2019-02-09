@@ -11,40 +11,43 @@ import java.util.Date;
  *
  * @author 1895314
  */
-public class SpecialOrder extends Order
-{
+public class NormalOrder extends Order{
     Date date;
     String number;
-   
+    
     public Date getDate() {
         return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public String getNumber() {
         return number;
     }
 
-    public void setDate(Date newDate) {
-        date = newDate;
+    public void setNumber(String number) {
+        this.number = number;
     }
-
-    public void setNumber(String newNumber) {
-        number = newNumber;
-    }
-    
     
     public void confirm()
     {
-        System.out.println("This is method of Confirm");
+        System.out.println("This method is of Confirm");
     }
     
     public void close()
     {
-        System.out.println("This is method of Close");
+        System.out.println("This method is of Close");
     }
     
     public void dispatch()
     {
-        System.out.println("This is method of Dispatch");
+        System.out.println("This method is of Dispatch");
+    }
+    
+    public void receive()
+    {
+        System.out.println("This method is of Receive");
     }
 }
